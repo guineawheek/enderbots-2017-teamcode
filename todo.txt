@@ -1,0 +1,45 @@
+values:
+1900-2000 cps good for autonomous
+
+1900 low
+2000 mid
+2100 high?
+
+continue testing shooter systems - maybe try lower sample rate?
+
+
+SANIC AUTONOMOUS:
+why won't wall-following work?
+
+LOGGING:
+jesus christ it's terrible
+
+requirements:
+seperate csv files for each run of autonomous - timestamp it
+
+better headers - time, alliance color, battery voltage
+make sure it works even if aborted...
+
+we need to be able to enable/disable sensor polling
+how?
+
+new interface - Loggable
+	void enableLogging();
+	void disableLogging();
+	boolean getLoggingEnabled();	
+	void getLoggedName();
+	Object getLoggedValue();
+
+apparently 0.25 power/2150 CPS will shoot the ball from our starting position rofl
+convert values for final robot
+
+right is positive rotation
+left is negative rotation
+everything wants to go ccw
+
+implement
+speed-based job
+speed measurement
+
+possible avenues:
+reimplement ModernRoboticsI2c{Color,Gyro}Sensor with calibration commands

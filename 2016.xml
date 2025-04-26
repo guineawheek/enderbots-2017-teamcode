@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='UTF-8' standalone='yes' ?>
+<Robot type="FirstInspires-FTC">
+    <DeviceInterfaceModule name="Device Interface Module 1" serialNumber="AI02RI5N">
+        <Gyro name="snsGyro" port="0" />
+        <ModernRoboticsI2cRangeSensor name="snsRange" port="1" />
+        <I2cDevice name="snsColorRevolver" port="2" />
+    </DeviceInterfaceModule>
+    <ServoController name="Servo Controller " serialNumber="AL00XM6U">
+        <Servo name="svoFlag" port="4" />
+        <Servo name="svoLift" port="5" />
+        <Servo name="svoFeeder" port="6" />
+    </ServoController>
+    <MotorController name="Back Motor Controller" serialNumber="A104ORUA">
+        <Motor name="mtrBR" port="1" />
+        <Motor name="mtrBL" port="2" />
+    </MotorController>
+    <MotorController name="Shooter Module" serialNumber="AL00VUOF">
+        <Motor name="mtrShooter" port="1" />
+        <Motor name="mtrCollector" port="2" />
+    </MotorController>
+    <MotorController name="front motor controller" serialNumber="AL00UVEZ">
+        <Motor name="mtrFL" port="1" />
+        <Motor name="mtrFR" port="2" />
+    </MotorController>
+    <MotorController name="Motor Controller 1" serialNumber="AL00VI3D">
+        <Motor name="mtrSlide" port="1" />
+    </MotorController>
+    <DeviceInterfaceModule name="Device Interface Module 3" serialNumber="AL00VCDR">
+        <ColorSensor name="snsColorBeaconRight" port="1" />
+        <ModernRoboticsI2cCompassSensor name="snsAccel" port="2" />
+        <ColorSensor name="snsColorLine" port="4" />
+        <ColorSensor name="snsColorBeaconLeft" port="5" />
+        <OpticalDistanceSensor name="snsEOPDFront" port="0" />
+        <OpticalDistanceSensor name="snsEOPDcounter" port="6" />
+        <DigitalDevice name="swAllianceColor" port="0" />
+        <DigitalDevice name="swAutoStartPosition" port="1" />
+        <DigitalDevice name="highLimit" port="6" />
+        <DigitalDevice name="lowLimit" port="7" />
+    </DeviceInterfaceModule>
+    <ServoController name="Servo Controller 1" serialNumber="AL00VB31">
+        <Servo name="svoFlick" port="1" />
+        <Servo name="svoBeacon" port="6" />
+    </ServoController>
+</Robot>

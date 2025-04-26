@@ -1,0 +1,5 @@
+.vimrc
+*~
+*.swp
+*.swo
+javadoc/*
